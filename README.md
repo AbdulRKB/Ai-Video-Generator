@@ -1,11 +1,6 @@
 # 🧠 AI Video Generator
 
-A Python script that automatically generates a short narrated video from a simple text prompt.:
-
-* **Google Gemini** – for script generation
-* **Cloudflare Stable Diffusion** – for AI-generated images
-* **gTTS (Google Text-to-Speech)** – for narration audio
-* **MoviePy** – to assemble the final video
+A Python script that automatically generates a short narrated video from a simple text.
 
 ---
 
