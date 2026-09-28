@@ -1,12 +1,21 @@
-# 🧠 AI Video Generator
+# AI Video Generator
 
-A Python script that automatically generates a short narrated video from a simple text.
+A multi-modal AI pipeline that transforms a text prompt into a short-form video. Uses LLM for scriptwriting, Diffusion Models for image generation and TTS for narration.
+
 
 ---
 
-## 🔧 Requirements
+<div align="center">
 
-* Python 3.8+
+![Flowchart](.img/Flowchart.svg)
+
+
+</div>
+
+
+
+## Dependencies
+
 * [Google Gemini API key](https://ai.google.dev/)
 * [Cloudflare API token](https://dash.cloudflare.com/)
 * Required Python packages:
@@ -17,15 +26,9 @@ A Python script that automatically generates a short narrated video from a simpl
 
 ---
 
-## 📁 Setup
+## Usage
 
-1. Replace these values in the script:
-
-```python
-GEMINI_API_KEY = "ENTER_YOUR_GEMINI_API_KEY"
-CLOUDFLARE_ACCOUNT_ID = "ENTER_YOUR_CLOUDFLARE_ACCOUNT_ID"
-CLOUDFLARE_API_TOKEN = "ENTER_YOUR_CLOUDFLARE_API_TOKEN"
-```
+1. Add your API keys to the environment
 
 2. Run the script:
 
