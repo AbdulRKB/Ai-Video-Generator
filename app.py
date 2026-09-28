@@ -2,10 +2,14 @@ from google import genai
 import json, re, time, requests, gtts, os
 from PIL import Image
 from moviepy import *
+import os
+from dotenv import load_dotenv
 
-GEMINI_API_KEY = "ENTER_YOUR_GEMINI_API_KEY"
-CLOUDFLARE_ACCOUNT_ID = "ENTER_YOUR_CLOUDFLARE_ACCOUNT_ID"
-CLOUDFLARE_API_TOKEN = "ENTER_YOUR_CLOUDFLARE_API_TOKEN"
+load_dotenv()
+
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+CLOUDFLARE_ACCOUNT_ID = os.getenv("CLOUDFLARE_ACCOUNT_ID")
+CLOUDFLARE_API_TOKEN = os.getenv("CLOUDFLARE_API_TOKEN")
 
 client = genai.Client(api_key=GEMINI_API_KEY)
 
